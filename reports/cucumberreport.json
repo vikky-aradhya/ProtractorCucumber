@@ -1,0 +1,76 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Booking a Flight",
+    "line": 1,
+    "id": "booking-a-flight",
+    "tags": [],
+    "uri": "e2e\\features\\Home.feature",
+    "elements": [
+      {
+        "id": "booking-a-flight;user-loging-in-to-webpage",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "User Loging in to Webpage",
+        "tags": [
+          {
+            "name": "@home1",
+            "line": 3
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "User navigates to login page",
+            "match": {
+              "location": "e2e\\steps\\HomeStep.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1005000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "User Login to PHP Travels",
+            "match": {
+              "location": "e2e\\steps\\HomeStep.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5537000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "e2e\\hooks\\ScenarioHooks.ts:15"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 6000000,
+              "error_message": "TypeError: Cannot read property 'createTransport' of undefined\n    at World.<anonymous> (E:\\ProtractorFramework\\e2e\\hooks\\ScenarioHooks.ts:21:40)\n    at Generator.next (<anonymous>)\n    at E:\\ProtractorFramework\\e2e\\hooks\\ScenarioHooks.js:7:71\n    at new Promise (<anonymous>)\n    at __awaiter (E:\\ProtractorFramework\\e2e\\hooks\\ScenarioHooks.js:3:12)\n    at World.<anonymous> (E:\\ProtractorFramework\\e2e\\hooks\\ScenarioHooks.js:24:12)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

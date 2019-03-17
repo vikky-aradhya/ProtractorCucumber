@@ -1,0 +1,17 @@
+{
+	"compilerOptions": {
+	  "target": "es2015",
+	  "module": "commonjs",
+	  "moduleResolution": "node",
+	  "inlineSourceMap": true,
+	  "declaration": false,
+	  "noImplicitAny": false,
+	  //"outDir": "JSFilesLocation"
+	},
+	"include": [
+    "**/*"
+  ],
+	"exclude": [
+	  "node_modules"
+	]
+}
